@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>RockPaperScissors</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,11 +22,37 @@
         </div>
       </header>
 
-      <main class="container-fluid">
+      <main class="container-fluid bg-main">
+        <div class="row p-3 justify-content-center">
+          <div class="col-12 text-center">
+            <h4 class="color-dark">Wins: <span id="winCount">0</span></h4>
+            <h4 class="color-dark">Loses: <span id="loseCount">0</span></h4>
+            <h4 class="color-dark">Draws: <span id="tieCount">0</span></h4>
+          </div>
+        </div>
+
+        <div class="row p-2 justify-content-around">
+          <div class="col-6 text-center text-dark">You Selected : <span id="User-Selection"></span></div>
+          <div class="col-6 text-center text-dark">Computer Selected : <span id="Comp-Selection"></span></div>
+        </div>
+        
+
         <div class="row p-3 justify-content-around">
-          <div class="col-3 text-center">Rock</div>
-          <div class="col-3 text-center">Paper</div>
-          <div class="col-3 text-center">Scissors</div>
+          <div class="col-3 my-5 text-center">
+            <button class="btn-lg btn-secondary" onclick="play('rock')">Rock</button>
+          </div>
+          <div class="col-3 my-5 text-center">
+            <button class="btn-lg btn-secondary" onclick="play('paper')">Paper</button>
+          </div>
+          <div class="col-3 my-5 text-center">
+            <button class="btn-lg btn-secondary" onclick="play('scissors')">Scissors</button>
+          </div>
+        </div>
+
+        <div class="row p-3 justify-content-center">
+          <div class="col-12 text-center">
+
+          </div>
         </div>
       </main>
 
@@ -34,6 +60,7 @@
 
       
     <!-- Optional JavaScript -->
+    <script src="app.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
